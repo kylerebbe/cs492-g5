@@ -173,7 +173,7 @@ $(document).ready(function()
  <div class="row">
       <!-- Regular Pizza -->
       <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="container">
+          <div class="container text-secondary font-weight-bold">
         <form action="{% url 'additem' %}" method="post">
         {% csrf_token %}
           {% for c in regular.category %}
@@ -216,7 +216,7 @@ $(document).ready(function()
 
       <!-- Sicilian Pizza -->
       <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="container">
+            <div class="container text-secondary font-weight-bold">
         <form action="{% url 'additem' %}" method="post">
         {% csrf_token %}
           {% for c in sicilian.category %}
