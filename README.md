@@ -16,6 +16,42 @@ The assignment had to be completed with meeting following requirements:
 - Complete the Shopping Cart and Placing an Order steps.
 - Complete the Viewing Orders and Personal Touch steps.
 
+## Kyles Installation notes
+For windows:
+Install VS CODE
+Install Git
+Install Python 3.12
+Install pip https://pypi.org/project/pip/
+
+Add python to environment variable path 
+C:\Users\kyler\AppData\Local\Programs\Python\Python312
+Add python scripts folder to environment path 
+C:\Users\kyler\AppData\Local\Programs\Python\Python312\Scripts
+
+App Execution Aliases:
+Disable App Installer: python.exe
+Disable App Installer: python3.exe
+
+https://github.com/kylerebbe/cs492-g5
+Git Clone Group Project Repository
+ - Add ssh key to github profile
+ 
+In VS Code:
+ctrl + shift + p > Python Select interpreter   Set to python 3.12
+Install Python Environment Manager Extension
+
+Click the "open in terminal" button under Workspace environments > .venv(3.12.4)
+	-Note : you may need to enable script execution in power shell if that is your default terminal, Open a power shell as administrator from start menu and type in the following command:  Set-ExecutionPolicy RemoteSigned
+	
+From the vs code terminal type the following to ensure your project venv is up to date.  You only need to run this if dependencies in the requirements.txt change.
+> pip install --ignore-installed -r .\requirements.txt
+
+To run application/website:
+py .\manage.py runserver
+
+Open website browser and navigate to 127.0.0.1:8000
+
+
 ## Installation
 
 1. Open terminal using Ctrl+T. Run the following command <br>
