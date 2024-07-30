@@ -1,58 +1,41 @@
-# Pizza ordering app using Django
+## Kyles Installation notes <br>
+For windows: <br>
+1. Install VS CODE <br>
+2. Install Git <br>
+3. Install Python 3.12 <br>
+4. Install pip (https://pypi.org/project/pip/) <br>
+ <br>
+5. Add python to environment variable path  <br>
+` C:\Users\kyler\AppData\Local\Programs\Python\Python312 ` <br>
+6. Add python scripts folder to environment path 
+`C:\Users\kyler\AppData\Local\Programs\Python\Python312\Scripts` <br>
 
-This app is live [here](https://django-pizza-order-hkamboj.herokuapp.com) <br>
-It runs a bit slow since it is deployed on Heroku free tier account.
+7. Open App Execution Aliases windows settings : <br>
+	* Disable App Installer: python.exe <br>
+	* Disable App Installer: python3.exe <br>
 
-This project is based on an assignment of 
-[CS50 Web Development with python and javascript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)
-
-
-
-## Milestones achieved
-
-The assignment had to be completed with meeting following requirements:
-
-- Complete the Menu, Adding Items, and Registration/Login/Logout steps.
-- Complete the Shopping Cart and Placing an Order steps.
-- Complete the Viewing Orders and Personal Touch steps.
-
-## Kyles Installation notes
-For windows:
-Install VS CODE
-Install Git
-Install Python 3.12
-Install pip https://pypi.org/project/pip/
-
-Add python to environment variable path 
-C:\Users\kyler\AppData\Local\Programs\Python\Python312
-Add python scripts folder to environment path 
-C:\Users\kyler\AppData\Local\Programs\Python\Python312\Scripts
-
-App Execution Aliases:
-Disable App Installer: python.exe
-Disable App Installer: python3.exe
-
-https://github.com/kylerebbe/cs492-g5
-Git Clone Group Project Repository
- - Add ssh key to github profile
+8. Git Clone Group Project Repository (https://github.com/kylerebbe/cs492-g5)
+ 	* Add ssh key to github profile (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) <br>
  
-In VS Code:
-ctrl + shift + p > Python Select interpreter   Set to python 3.12
-Install Python Environment Manager Extension
+9. In VS Code, select python interpreter: <br>
+	* ctrl + shift + p > Python Select interpreter <br> `Set to python 3.12` <br>
 
-Click the "open in terminal" button under Workspace environments > .venv(3.12.4)
-	-Note : you may need to enable script execution in power shell if that is your default terminal, Open a power shell as administrator from start menu and type in the following command:  Set-ExecutionPolicy RemoteSigned
+10. Install Python Virtual Environment Manager <br>
+11. Create Virtual Environment in workspace. (.venv) <br>
+
+12. Click the "open in terminal" button under Workspace environments > .venv(3.12.4) <br>	-Note : you may need to enable script execution in power shell if that is your default terminal.
+	* Open a power shell as administrator from start menu and type in the following command:  `Set-ExecutionPolicy RemoteSigned`
 	
-From the vs code terminal type the following to ensure your project venv is up to date.  You only need to run this if dependencies in the requirements.txt change.
-> pip install --ignore-installed -r .\requirements.txt
+13. From the vs code terminal type the following to ensure your project venv is up to date.  You only need to run this if dependencies in "requirements.txt" change.<br>
+`pip install --ignore-installed -r .\requirements.txt`
 
-To run application/website:
-py .\manage.py runserver
+#### 14. To run application/website, type in the following from the terminal with vertual environment activated: <br>
+`py .\manage.py runserver`
 
-Open website browser and navigate to 127.0.0.1:8000
+#### 15. Open website browser and navigate to `127.0.0.1:8000`
 
 
-## Installation
+## Original Installation Notes
 
 1. Open terminal using Ctrl+T. Run the following command <br>
 `git clone https://github.com/HemabhKamboj/Pizza-ordering-app.git`
@@ -86,13 +69,3 @@ production application.
 - **Bootstrap** Bootstrap is a free and open-source front-end Web framework. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other
  interface components as well as optional JavaScript extensions. [Get Bootstrap](getbootstrap.com) <br>
 Used for stylising frontend. 
-
-
-## To do list 
-1. Integrate Payment gateway 
-2. Authenticate user using Google and Facebook
-3. Integrating automatic mailing system to send conformation of order.
-4. Improving frontend with better CSS and Javascript implementation 
-
-
-
