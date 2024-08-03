@@ -35,6 +35,25 @@ For windows: <br>
 #### 15. Open website browser and navigate to `127.0.0.1:8000`
 
 
+Note: if you are running MACOS you may have to do the following steps, and then run step 13 to continue setting up your .venv:
+Install Homebrew using this command:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install postgresql
+
+brew install openssl
+
+brew link openssl
+
+Set the following environment variables ("flags"):
+
+export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
+
+
+
 ## Original Installation Notes
 
 1. Open terminal using Ctrl+T. Run the following command <br>
